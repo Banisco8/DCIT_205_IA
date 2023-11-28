@@ -1,0 +1,160 @@
+.header{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  z-index: 100;
+
+  background-color: rgb(240, 240, 240);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(240, 240, 240);
+}
+
+/*.main{
+  width: 100px;
+  height: 50vh;
+  margin-top: 30px;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%)url();
+  background-size: cover;
+  background-position: center;
+ 
+}*/
+
+.navbar{
+  position: fixed;
+  width: 1200px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-logo{
+  position: fixed;
+  margin-top: 25px;
+  width: 400px;
+  height: 70px;
+  cursor: pointer;
+}
+
+
+.menu{
+  float: left;
+  height: 0px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  margin-bottom: 80px;
+  z-index: 80;
+
+}
+
+.menu ul li{
+list-style: none;
+margin-left: 60px;
+margin-top: 2px;
+font-size: 16px;
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+  color: rgb(52, 133, 52);
+}
+
+.menu ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+width: 100%;
+}
+
+.search-button{
+  height: 25px;
+  width: 25px;
+  margin-top: 0dvh;
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.text-heading{
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-top: 120px;
+  text-align: justify;
+  text-align-last: center;
+  font-family: Arial;
+  font-size: 30px;
+  color: black;
+}
+
+.text-area{
+
+  display:flex;
+  font-family: Arial;
+  font-size: 25px;
+  color:white;
+  text-align: justify;
+  text-align-last: center;
+  margin-top:45px;
+  margin-left: 500px;
+  margin-right: 150px;
+}
+
+.active{
+  background-color: rgb(239, 239, 201);
+  border-radius: 3px;
+  transition: none;
+  height: 22px;
+ }
+
+
+ .back-video{
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 80vh;
+}
+
+@media (max-aspect-ratio: 16/9){
+.back-video{
+  width: 100%;
+  
+}
+}
